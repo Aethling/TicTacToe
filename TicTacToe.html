@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Tac Toe</title>
+	<style>
+		body {
+			background-color: white;
+		}
+		table {
+			position: absolute;
+			top: 90px;
+			left: 95px;
+			border-collapse: collapse;
+		}
+		td {
+			width: 150px;
+			height: 150px;
+			text-align: center;
+			font-size: x-large;
+			color: grey;
+		}
+		td#e {
+			border: 10px solid black;
+		}
+		td#d, td#f  {
+			border-bottom: 10px solid black;
+			border-top: 10px solid black;
+		}
+		td#b, td#h {
+			border-left: 10px solid black;
+			border-right: 10px solid black;			
+		}
+		form {
+			position: absolute;
+			left: 181px;
+			top: 592px;
+		}
+		input {
+			border: 3px solid black;
+			height: 30px;
+			font-size: x-large;
+		}
+		input#enterButton {
+			font-size: large;
+		}
+		.X, .O {
+			font-size: 100pt;
+			color: black;
+		}
+		#messageArea {
+			position: relative;
+			left: -86px;
+			font-size: 40pt;
+			color: red;
+
+		}
+		h1 {
+			padding-left: 174px;
+			text-decoration: underline;
+			font-size: 46pt;
+			margin-top: -2px;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Tic Tac Toe</h1>
+	<div id="board">
+	<table>
+		<tr>
+			<td id="a">a</td><td id="b">b</td><td id="c">c</td>
+		</tr>
+		<tr>
+			<td id="d">d</td><td id="e">e</td><td id="f">f</td>
+		</tr>
+		<tr>
+			<td id="g">g</td><td id="h">h</td><td id="i">i</td>
+		</tr>
+	</table>
+	<form>
+	<input type="text" id="inputLetter" placeholder="Enter letter plus x or o">
+	<input type="button" id="enterButton" value="Enter">
+	<div id="messageArea"></div>
+	</form>
+	</div>
+	<script src="TicTacToe.js">
+		</script>
+</body>
+</html>
